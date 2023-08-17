@@ -1,0 +1,9 @@
+name: ArcTrade
+version: '${project.version}'
+main: org.ashenite.arctrade.ArcTrade
+api-version: '1.20'
+authors: [ Aurka ]
+commands:
+  trade:
+    description: TradeCMD command
+    usage: /<command> <player>
