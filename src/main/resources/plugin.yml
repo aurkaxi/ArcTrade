@@ -1,0 +1,29 @@
+name: ArcTrade
+description: Simple yet user-friendly trade plugin.
+prefix: '&8[&6ArcTrade&8]&r '
+version: '${project.version}'
+main: org.ashenite.arctrade.ArcTrade
+api-version: '1.20.1'
+author: Aurka
+commands:
+    trade:
+        description: Player 2 Player Instant Trade
+        usage: /<command> <player>
+        permission: arctrade.trade
+        aliases: [ p2p ]
+permissions:
+    arctrade.trade:
+        description: Allows player to trade with other players.
+        default: true
+    arctrade.marketplace:
+        description: Allows player to use the marketplace.
+        default: true
+        children:
+            arctrade.marketplace.sell: true
+            arctrade.marketplace.buy: true
+    arctrade.marketplace.sell:
+        description: Allows player to sell items on the marketplace.
+        default: true
+    arctrade.marketplace.buy:
+        description: Allows player to buy items on the marketplace.
+        default: true
